@@ -7,6 +7,7 @@ version: 1.0.5
 """
 
 import json
+import requests
 from pydantic import BaseModel, Field
 from typing import (
     Union,
@@ -22,7 +23,6 @@ from typing import (
 from open_webui.utils.misc import get_last_user_message
 from open_webui.apps.webui.models.users import Users
 from open_webui.main import generate_chat_completions
-import requests
 
 
 class Pipe:
@@ -39,8 +39,8 @@ class Pipe:
             description="OpenAI Compatible URL for local models",
         )
         INTENTION_MODEL: str = Field(
-            default="qwen2.5:1.5b-instruct-fp16:latest",
-            description="Model for determining intention.",
+            default="gemma:2b-instruct-v1.1-q4_K_M",
+            description="Model for determining intention of the users prompt.",
         )
         ENABLE_EMITTERS: bool = Field(
             default=True,
@@ -49,19 +49,23 @@ class Pipe:
         INTENTIONS: Dict[str, Dict[str, str]] = Field(
             default={
                 "chatting": {
-                    "description": "The user is simply chatting with you or no other intentions match the user request.",
-                    "model": "qwen2.5:14b-instruct-q4_K_M:latest",
-                },
-                "media": {
-                    "description": "The user is specifically asking about a specific image or a specific video.",
-                    "model": "llava:latest",
+                    "description": "The user is simply chatting with you or no other intentions match the user request. Most requests will use this model.",
+                    "model": "qwen2.5:14b-instruct-q4_K_M",
                 },
                 "code": {
                     "description": "The user is asking about or requesting help with programming or code.",
-                    "model": "qwen2.5:32b-instruct:latest",
+                    "model": "qwen2.5:32b-instruct",
+                },
+                "multimedia": {
+                    "description": "The user is being specific and asking about a specific image or video only. Only use this if the user is asking about multimedia items.",
+                    "model": "llava",
+                },
+                "logic": {
+                    "description": "The user is is asking for help in solving a logic, puzzle or reasoning problem.",
+                    "model": "visual_tree_of_thoughts.mcts-qwen2.5:14b-instruct-q4_K_M",
                 },
             },
-            description="Mapping of intentions to their descriptions and associated models.",
+            description="Mapping of the users intentions to their descriptions and associated models.",
         )
 
     def __init__(self):
@@ -100,7 +104,7 @@ class Pipe:
                     "role": "user",
                     "content": f"""
                     <system_prompt>
-                    You are an intention measurement machine. You will consider the USER_QUERY carefully and decide what their intention is.
+                    You are an intention measurement machine. You will consider the USER_QUERY carefully and accurately decide what their intention is and which model is most appropriate for answering the users prompt.
                     You may select one of the following intentions from the object below:
 
                     {intentions_prompt}
