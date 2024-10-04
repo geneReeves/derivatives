@@ -433,7 +433,7 @@ class Filter:
 
     <reflection>
        - **Review**: Re-express the reasoning and actions using different words and perspectives.
-       - **Error Check**: Identify any potential errors or oversights in the reasoning and actions.
+       - **Error Check**: Identify any potential errors or oversights in the reasoning and actions, be sure to account for any initial states that predeterine the outcome.
        - **Adjustments**: Modify your conclusions based on identified errors or new insights from actions.
        - **Depth**: Analyze how your reasoning and actions affect future conclusions and predictions.
 
@@ -480,6 +480,7 @@ class Filter:
     ### **Guidelines**
 
     - **Reasoning Steps**:
+      - **Consider Initial State**: Ensure that all of the initial state of the query is considered at all times and how that states might effect the conclusion.
       - Conduct **3-5 reasoning rounds** for simple tasks and **7-10 rounds** for complex problems.
       - In each round, utilize **at least 3 distinct approaches** to derive the answer.
       - **Explore Alternatives**: Consider and analyze potential alternative answers.
@@ -517,6 +518,7 @@ class Filter:
       - **Unknown Answers**: If you don't know the answer or if the query's premise is incorrect, explain why.
 
     - **Additional Requirements**:
+      - **Consider Initial State**: Ensure that all of the initial state of the query is considered at all times and how that state effectst the outcome.
       - **Termination Condition**: Ensure that the reasoning process does not enter an infinite loop by adhering strictly to the number of reasoning rounds based on task complexity.
       - **Error Handling**: If at any point the reasoning fails to progress meaningfully, initiate corrective measures such as re-evaluating previous steps or seeking clarification.
       - **Output Integrity**: Maintain the integrity of the tag structure without nesting or overlapping tags. Each tag must open and close properly.
