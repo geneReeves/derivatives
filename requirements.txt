@@ -1,0 +1,8 @@
+termcolor
+finnhub-python
+transformers
+bs4
+pydantic
+torch
+aiohttp
+python-dotenv

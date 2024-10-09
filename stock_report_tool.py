@@ -272,7 +272,7 @@ def _compile_report(data: Dict[str, Any]) -> str:
 
 class Tools:
     class Valves(BaseModel):
-        FINNHUB_API_KEY: str = "cs0mur1r01qru183m31gcs0mur1r01qru183m320"
+        FINNHUB_API_KEY: str = ""
         pass
 
     def __init__(self):
@@ -336,3 +336,40 @@ class Tools:
             }
         )
         return report
+
+
+if __name__ == "__main__":
+    import os
+    from dotenv import load_dotenv
+
+    load_dotenv()
+
+    async def main():
+        # Simple event emitter for local execution
+        async def event_emitter(event):
+            print(f"Event: {event['type']} - {event['data']['description']}")
+
+        # Get API key from user
+        api_key = os.getenv("FINNHUB_API_KEY")
+
+        # Create Valves instance with user-provided API key
+        valves = Tools.Valves(FINNHUB_API_KEY=api_key)
+
+        # Create Tools instance
+        tools = Tools()
+
+        # Get ticker from user
+        ticker = input("Enter the stock ticker symbol (e.g., AAPL): ")
+
+        try:
+            # Call compile_stock_report with necessary parameters
+            report = await tools.compile_stock_report(
+                ticker, __user__={"valves": valves}, __event_emitter__=event_emitter
+            )
+            print("\nStock Analysis Report:")
+            print(report)
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+
+    # Run the async main function
+    asyncio.run(main())
