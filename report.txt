@@ -1,0 +1,120 @@
+
+    Comprehensive Stock Analysis Report for Apple Inc (AAPL)
+
+    Basic Information:
+    Industry: Technology
+    Market Cap: 3,432,638 M USD
+    Share Outstanding: 15,204 M
+    Country: US
+    Exchange: NASDAQ NMS - GLOBAL MARKET
+    IPO Date: 1980-12-12
+
+    Current Trading Information:
+    Current Price: $225.77
+    Daily Change: 1.84% ($4.08)
+    Day's Range: $223.25 - $225.98
+    Open: $224.30
+    Previous Close: $221.69
+
+    Key Financial Metrics:
+    52 Week High: $237.23
+    52 Week Low: $164.075
+    P/E Ratio: 33.6678
+    EPS (TTM): $6.567899999999999
+    Return on Equity: 156.07999999999998%
+    Debt to Equity: N/A
+    Current Ratio: 0.953
+    Dividend Yield: 0.45108032%
+
+    Peer Companies: AAPL, DELL, HPQ, SMCI, HPE
+
+    Detailed Financial Analysis:
+
+    1. Valuation Metrics:
+    P/E Ratio: 33.6678
+    - Interpretation: High (may be overvalued)
+
+    P/B Ratio: 49.4607
+    - Interpretation: High
+
+    2. Profitability Metrics:
+    Return on Equity: 156.07999999999998%
+    - Interpretation: Excellent
+
+    Net Profit Margin: 25%
+    - Interpretation: Excellent
+
+    3. Liquidity and Solvency:
+    Current Ratio: 0.953
+    - Interpretation: Poor
+
+    Debt-to-Equity Ratio: N/A
+    - Interpretation: Low leverage
+
+    4. Dividend Analysis:
+    Dividend Yield: 0.45108032%
+    - Interpretation: Low yield
+
+    5. Market Performance:
+    52-Week Range: $164.075 - $237.23
+    Current Price Position: 84.33% of 52-Week Range
+
+    Beta: 1.0053424
+    - Interpretation: More volatile than market
+
+    Overall Analysis:
+    Apple Inc shows weak financial health with high valuation metrics. The company's profitability is excellent, and it has low financial leverage. Investors should consider these factors along with their investment goals and risk tolerance.
+
+
+    Recent News and Sentiment Analysis:
+    
+    Title: Is The iPhone Losing Its Buzz Among Teens? Piper Sandler Finds Out
+    URL: https://finnhub.io/api/news?id=5ddfd2d86665c1a75e993b97a8bbf89e989d29e50d20b9917cdc8f6b5299f62e
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: Heard on the Street: AI Isn't Selling PCs Yet
+    URL: https://finnhub.io/api/news?id=e5fc858f4d4d3e3b12d80e29200aac65c94d4fb51bcca9dc247338781b484cfa
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: Apple, Nvidia Supplier TSMC Reports Third Quarter Sales Above Wall Street Estimates
+    URL: https://finnhub.io/api/news?id=243257629e593ae52cab72c236fa9294cf8e67a97d0fd161617815dc06b5ff40
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: Apple iPhone 16 May Be a Want, Not a Need, for Teens, Survey Shows
+    URL: https://finnhub.io/api/news?id=6e1ae525a786dfb280689c6757fed1e2dde758a5021848d288d03ccf61512915
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: Analyst: Apple (AAPL) iPhone 16 Holiday Sales Hopes At Risk Amid ‘Disappointing Sell-Throughs’
+    URL: https://finnhub.io/api/news?id=476a5f0ef2ec8b30585856b7c36b2d34724fa17f694da38f3b938e073bbdfd44
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: DOJ’s Google breakup remedy puts tech world on notice
+    URL: https://finnhub.io/api/news?id=1873c2d2da9e777d5178674710c12b46cc6be665e8b457c983f3738fdbcc8934
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: Billionaires Are Deciding to Sell Shares of This Well-Known Stock
+    URL: https://finnhub.io/api/news?id=495dfc69570664065794921fd1ca8a2e32297e2b1c32dec3ef6b63e68a08959b
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: Shares of SoundHound AI, C3.ai, and Upstart Plummeted by More Than 70%. Here's a Safer Way to Invest In Artificial Intelligence (AI) Stocks.
+    URL: https://finnhub.io/api/news?id=5fe6e975a459403c73125f6c2e1b325befca2002bbcb808b157bdd24bafa50a1
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: 67% of Warren Buffett's $315 Billion Portfolio Is Invested in These 5 Unstoppable Stocks
+    URL: https://finnhub.io/api/news?id=06dcad0b158cd4d4f73e6b45f158fbde8f93b39ea12a7fe3e9a893cee6661a23
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    
+    Title: 38.3% of Warren Buffett's $315 Billion Portfolio Is Invested in 3 Artificial Intelligence (AI) Stocks
+    URL: https://finnhub.io/api/news?id=60e6e613938e101b695db196787b900a18377426778deeb656bdb3fc5d2c60b1
+    Sentiment Analysis: Positive (Confidence: 1.00)
+
+    

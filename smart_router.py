@@ -52,23 +52,17 @@ class Pipe:
                     "description": "The user is simply chatting with you or no other intentions match the user request. Most requests will use this model.",
                     "model": "qwen2.5:14b-instruct-q4_K_M",
                 },
-                "finance": {
-                    "description": "The user is asking about or requesting help with finance, money or stocks.",
-                    "model": "qwen2.5:14b-instruct-q4_K_M",
-                },
-                "mathematics": {
-                    "description": "The user is specifically asking a math problem that is not finance, money or stock.",
-                    "model": "qwen2.5:14b-instruct-q4_K_M",
-                },
                 "code": {
                     "description": "The user is asking about or requesting help with programming or code.",
-                    "model": "openai/gpt-4o-mini",
+                    "model": "qwen2.5:32b-instruct",
                 },
                 "multimedia": {
                     "description": "The user is being specific and asking about a specific image or video only. Only use this if the user is asking about multimedia items.",
                     "model": "llava",
                 },
-            },
+                "logic: {
+                    "description": "The user is asking for help with something logical such as a puzzle or a problem that requires deductive reasoning.",
+                    "model": "qwen2.5:32b-instruct",
             description="Mapping of the users intentions to their descriptions and associated models.",
         )
 

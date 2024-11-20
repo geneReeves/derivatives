@@ -1,0 +1,52 @@
+#--
+#--  Sample Puzzle
+#--
+
+Oliver picks 44 kiwis on Friday. Then he picks 58 kiwis on Saturday. On Sunday, he picks double the
+number of kiwis he did on Friday, but five of them were a bit smaller than average. How many kiwis
+does Oliver have?
+
+#--
+#-- Example Solution
+#--
+
+#!/usr/bin/env python
+
+A = Oliver
+B = 0 # Number of Kiwi
+C = Friday
+D = Saturday
+E = Sunday
+F = DayOfTheWeek
+G = Kiwi
+
+if F = C:
+    B = 44
+
+if F = D:
+    B += 58
+
+if F = E:
+    B += 44 * 2
+
+print(f"{A} has {B} {G}")
+
+#--
+#-- Explanation
+#--
+
+We are writing python scripts to solve problems in a symbolic way.  Notice how we ignored the number of smaller kiwis because the question was about the number kiwis not the number of kiwis of a given size.  What you should learn is that some information in the text may not be relevant.
+
+We are using reason and logic to solve the problem programmatically using python.  It is up to you to carefully examine the text, ignore any irrelevant items and write a python script that solves the problem for the user.
+
+#--
+#-- Instructions
+#--
+
+Using the example above write a python script that solves this problem.  Be certain to pay close attention to the additional requirements after the puzzle.
+
+You must use the appropriate tags. You will be fired if you do not use tags. I will tip you $10 if you do use tags correctly in accordance with your system prompt.
+
+The instructions in your system prompt are critical.  You will be fired if you ignore them.
+
+Your final output must only be a single python script that when run delivers the correct answer, be verbose in the answer.

@@ -3,7 +3,7 @@ title: mcts
 author: av
 author_url: https://github.com/av
 description: mcts - Monte Carlo Tree Search
-version: 0.0.5
+version: 0.0.7
 """
 
 import logging
@@ -32,7 +32,7 @@ default_max_children = 2
 default_exploration_weight = 1.414
 default_max_iterations = 2
 default_max_simulations = 2
-default_thoughts = 2
+default_thoughts = 3
 
 # ==============================================================================
 
@@ -76,6 +76,11 @@ Analyze this iteration of the thought process. Consider the following:
 2. What patterns or approaches led to higher-scoring thoughts?
 3. Were there any common pitfalls or irrelevant tangents in lower-scoring thoughts?
 4. How can the thought generation process be improved for the next iteration?
+5. Is there any irrelevant fact that can or should be disregarded?
+6. Is there a flaw in deductive reasoning?
+7. Is the question actually being answered?
+8. Use exceptional critical thinking.
+9. Any rule or guideline in the context is supremely important and you should use it even if you do not agree.
 
 Provide a concise analysis and suggest one specific improvement strategy for the next iteration.
 """.strip()
@@ -99,7 +104,7 @@ WRITE A REVISED ANSWER THAT ADDRESSES THE CRITIQUE. DO NOT WRITE ANYTHING ELSE.
 
 initial_prompt = """
 <instruction>
-Answer the question below. First, clearly state any important initial conditions or assumptions. Then, proceed with your answer. Do not pay attention to unexpected casing, punctuation, or accent marks.
+Answer the question below. First, clearly state any important initial conditions, irrelevant information, or assumptions. Your highest priority is to use rules and guidelines in the context. Then, proceed with your answer. Do not pay attention to unexpected casing, punctuation, or accent marks.
 </instruction>
 
 <question>

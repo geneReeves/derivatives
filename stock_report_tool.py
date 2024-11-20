@@ -368,6 +368,8 @@ if __name__ == "__main__":
             )
             print("\nStock Analysis Report:")
             print(report)
+            with open("report.txt", "w") as file:
+                file.write(report)
         except Exception as e:
             print(f"An error occurred: {str(e)}")
 

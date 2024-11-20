@@ -1,6 +1,6 @@
 """
 title: Reflection Filter
-author: Max Kerkula & Mike Fischer
+author: Max Kerkula | Mike Fischer
 version: .04
 """
 
